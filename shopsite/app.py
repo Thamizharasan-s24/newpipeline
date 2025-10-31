@@ -9,7 +9,7 @@ app.secret_key = "your_secret_key_here"  # change this to something secure
 
 # ---------- SQLite Connection ----------
 def get_db_connection():
-    conn = sqlite3.connect("data_wrong/handmade_store.db")
+    conn = sqlite3.connect("data/handmade_store.db")
     conn.row_factory = sqlite3.Row
     return conn
 
